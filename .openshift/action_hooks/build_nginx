@@ -9,7 +9,7 @@ function install_nginx() {
     pushd ${BUILD_DIR}
 
     echo "Downloading ${pkg_pcre}."
-    wget --output-document=./${pkg_pcre} ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${pkg_pcre}
+    wget --output-document=./${pkg_pcre} ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre2-${pkg_pcre}.tar.bz2
 
     echo "Unpacking ${pkg_pcre}."
     tar xfj ${pkg_pcre}
